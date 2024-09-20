@@ -1,7 +1,7 @@
 # spherocylinder scattering amplitude using interpolation
 
 # Urs Gasser
-# Paul Scherrer Instutut
+# Paul Scherrer Institut
 
 using Interpolations, SpecialFunctions
 
