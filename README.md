@@ -16,6 +16,11 @@ As there is no analytical expression for the scattering amplitude of a spherocyl
 the set of spherocylinders used in the model is calculated in the beginning to obtain interpolation 
 functions that allow for a fast calculation of all scattering amplitudes.
 
-File ??? contains the Julia code to fit example data given in file `cyl3_312_50k_0_000.jld`. This `jld`
-file also contains the spherocylinder model and other data such as the q-vector orientations used in
-the fit.
+File `example_312.jl` contains the Julia code to fit example data given in file `cyl3_312_50k_0_000.jld`.
+This `jld` file also contains the spherocylinder model and other data such as the q-vector orientations 
+used in the fit.
+To avoid the re-calculation of all scattering amplitudes after a change of the model, the scattering
+amplitudes of the spherocylinder triplets are kept in memory and are re-calculated only after a change
+of the model is accepted. A translation or re-orientation of a triplet is rejected, if it does not
+improve the fit to the SAXS data.
+After 10000 optimization steps, the improved model is saved in the `jld` file.
