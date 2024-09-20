@@ -1,3 +1,6 @@
+# Urs Gasser
+# Paul Scherrer Institut
+
 using LinearAlgebra
 
 """
