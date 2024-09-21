@@ -24,3 +24,5 @@ amplitudes of the spherocylinder triplets are kept in memory and are re-calculat
 of the model is accepted. A translation or re-orientation of a triplet is rejected, if it does not
 improve the fit to the SAXS data.
 After 10000 optimization steps, the improved model is saved in the `jld` file.
+
+Run the example from the command line with `> julia --threads 8 example_312.jl`
